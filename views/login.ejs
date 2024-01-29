@@ -1,0 +1,35 @@
+<h1>Login</h1>
+<h1>Register</h1>
+
+<%
+if(typeof message !=='undefined'){
+    %>
+
+    <h4 style="color:red;"><%=message %></h4>
+    <%
+
+}
+%>
+
+<form action="" method="POST">
+    <input type="email" placeholder="Enter Email" name="email" required>
+    <br><br>
+    <input type ="password" placeholder="Enter PW" name="password" required>
+    <br><br>
+
+    <input type="submit" value="Login">
+    <input type="button" value="Register" onclick="redirectToRegister()">
+
+
+
+</form>
+<script>
+    function redirectToRegister() {
+        window.location.href = 'http://127.0.0.1:3000/register';
+    }
+</script>
+
+
+
+
+
